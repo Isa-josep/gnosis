@@ -43,6 +43,8 @@ class _LoginFormState extends State<LoginForm> {
               }
               return '';
             },
+             borderRadius: BorderRadius.circular(50),
+            borderSide: BorderSide.none,
           ),
 
           const Divider(
@@ -63,7 +65,9 @@ class _LoginFormState extends State<LoginForm> {
                 return "Contraseña no valida";
               }
               return '';
-            },
+            }, 
+            borderRadius: BorderRadius.circular(50),
+            borderSide: BorderSide.none,
 
           ),
           const Divider(

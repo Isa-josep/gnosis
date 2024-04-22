@@ -20,7 +20,10 @@ class _RegisterPageState extends State<RegisterPage> {
         decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: <Color>[
-                Color.fromARGB(172, 37, 185, 234),
+                Color.fromARGB(172, 102, 215, 252),
+                Color.fromARGB(172, 132, 209, 235),
+                Color.fromARGB(172, 180, 227, 243),
+                Color.fromARGB(172, 200, 223, 230),
                 Color.fromARGB(255, 255, 255, 255),
               ],
               begin: Alignment.topLeft,

@@ -17,7 +17,7 @@ class InputText extends StatelessWidget {
    this.obsecure=false,
    required this.onChanged,
    required this.validator,
-   this.keyboard = TextInputType.text,
+   this.keyboard = TextInputType.text, required BorderSide borderSide, required BorderRadius borderRadius,
   });
 
 @override
@@ -32,11 +32,20 @@ class InputText extends StatelessWidget {
           labelText: label,
           labelStyle: TextStyle(
             color: Colors.black,
-            fontSize: 25.0),
+            fontSize: 15.0),
             suffixIcon: this.icono,
             border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10.0)
+              borderRadius: BorderRadius.circular(50.0),
+              borderSide: BorderSide(
+               color: Color.fromARGB(156, 172, 172, 172),
               )
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(50.0),
+                borderSide: BorderSide(
+                  color: Color.fromARGB(253, 109, 204, 255),
+                ),
+                )
         ),
       ),
     );

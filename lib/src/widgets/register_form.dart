@@ -47,6 +47,8 @@ class _RegisterFormState extends State<RegisterForm> {
               }
               return '';
             },
+            borderRadius: BorderRadius.circular(10),
+            borderSide: BorderSide.none,
           ),
           const Divider(
                 height: 20.0,
@@ -66,6 +68,8 @@ class _RegisterFormState extends State<RegisterForm> {
               }
               return '';
             },
+            borderRadius: BorderRadius.circular(10),
+            borderSide: BorderSide.none,
           ),
           const Divider(
                 height: 20.0,
@@ -85,6 +89,8 @@ class _RegisterFormState extends State<RegisterForm> {
               }
               return '';
             },
+            borderRadius: BorderRadius.circular(50),
+            borderSide: BorderSide.none,
           ),
           const Divider(
                 height: 20.0,

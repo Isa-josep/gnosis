@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gnosis/config/router/app_router.dart';
 import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Inicio',
       home: MyHomePage(),
-      routes: {
-        '/login': (context) => LoginPage(),
-        '/home': (context) => MyHomePage(),
-      },
+      
     );
   }
 }
@@ -44,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> LoginPage()));
+                context.go('/login');
               },
               child: Text('Iniciar sesión'),
             ),
@@ -52,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
             
             ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> RegisterPage()));
+                context.go('/register');
                 },
               child: Text('Registrarse'),
             ),

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gnosis/login.dart';
-import 'package:gnosis/register.dart';
-import 'package:gradients/gradients.dart';
-
+import 'package:gnosis/config/router/app_router.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Inicio',
-      home: const MyHomePage(),
+      home: MyHomePage(),
       routes: {
         '/login': (context) => LoginPage(),
         '/home': (context) => MyHomePage(),
@@ -25,8 +23,6 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -66,3 +62,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+

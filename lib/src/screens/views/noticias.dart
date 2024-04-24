@@ -5,8 +5,6 @@ class NewsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text("News", style: TextStyle(fontSize: 24)),
-    );
+    return Container();
   }
 }

@@ -39,7 +39,7 @@ final appRouter = GoRouter(
     ),
     GoRoute(
       path: '/horario',
-      builder: (context, state) => const HorarioPage(),
+      builder: (context, state) =>  HorarioPage(),
     
     ),
 

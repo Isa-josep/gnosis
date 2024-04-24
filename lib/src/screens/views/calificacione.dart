@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:gnosis/src/widgets/icon_container.dart';
 // Import the HorarioPage widget
 
 class MyTableRow extends StatelessWidget {

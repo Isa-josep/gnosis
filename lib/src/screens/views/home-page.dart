@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
     const Center(child: ProfilePage()),
     const Center(
         child: CalificacionesPage()),
-    const Center(child: HorarioPage()),
+     Center(child: HorarioPage()),
     const Center(child: NewsPage()),
   ];
   final colors = [
@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       
       appBar: AppBar(
-        title: const Text('MyApp',
+        title: const Text('GNOSIS NW',
         style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
         centerTitle: true,
         backgroundColor: colors[_currentIndex],

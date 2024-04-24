@@ -22,31 +22,29 @@ class InputText extends StatelessWidget {
 
 @override
   Widget build(BuildContext context) {
-    return Container(
-      child: TextFormField(
-        keyboardType: keyboard,
-        obscureText: obsecure,
-        validator: (value) => validator(value ?? ''),
-        onChanged: onChanged,
-        decoration: InputDecoration(
-          labelText: label,
-          labelStyle: TextStyle(
-            color: Colors.black,
-            fontSize: 15.0),
-            suffixIcon: this.icono,
-            border: OutlineInputBorder(
+    return TextFormField(
+      keyboardType: keyboard,
+      obscureText: obsecure,
+      validator: (value) => validator(value ?? ''),
+      onChanged: onChanged,
+      decoration: InputDecoration(
+        labelText: label,
+        labelStyle: const TextStyle(
+          color: Colors.black,
+          fontSize: 15.0),
+          suffixIcon: icono,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(50.0),
+            borderSide: const BorderSide(
+             color: Color.fromARGB(156, 172, 172, 172),
+            )
+            ),
+            focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(50.0),
-              borderSide: BorderSide(
-               color: Color.fromARGB(156, 172, 172, 172),
-              )
+              borderSide: const BorderSide(
+                color: Color.fromARGB(253, 109, 204, 255),
               ),
-              focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(50.0),
-                borderSide: BorderSide(
-                  color: Color.fromARGB(253, 109, 204, 255),
-                ),
-                )
-        ),
+              )
       ),
     );
   }

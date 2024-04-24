@@ -33,7 +33,7 @@ class _LoginFormState extends State<LoginForm> {
             hint: 'Enter your email',
             label: "Correo electronico",
             keyboard: TextInputType.emailAddress,
-            icono: Icon(Icons.verified_user),
+            icono: const Icon(Icons.verified_user),
             onChanged: (data) {
               _email = data;
             },
@@ -78,7 +78,12 @@ class _LoginFormState extends State<LoginForm> {
             width: double.infinity,
             height: 50.0,
             child: ElevatedButton(
-              onPressed: _submit,
+              onPressed: () {
+                
+                    GoRouter.of(context).push('/homepage');
+                    
+                    
+                  },
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 99, 208, 255),
                 shadowColor: const Color.fromARGB(255, 0, 0, 0),

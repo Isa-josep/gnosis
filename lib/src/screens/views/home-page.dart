@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gnosis/src/screens/views/calificacione.dart';
+import 'package:gnosis/src/screens/views/calificaciones-prueba.dart';
 import 'package:gnosis/src/screens/views/horario.dart';
 import 'package:gnosis/src/screens/views/noticias.dart';
 import 'package:gnosis/src/screens/views/profile.dart';
@@ -18,9 +19,8 @@ class _HomePageState extends State<HomePage> {
 
   final screens = [
     const Center(child: ProfilePage()),
-    const Center(
-        child: CalificacionesPage()),
-     Center(child: HorarioPage()),
+    Center(child: CalPage()),
+    Center(child: HorarioPage()),
     const Center(child: NewsPage()),
   ];
   final colors = [
@@ -33,10 +33,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       appBar: AppBar(
         title: const Text('GNOSIS NW',
-        style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
         centerTitle: true,
         backgroundColor: colors[_currentIndex],
         automaticallyImplyLeading: false,

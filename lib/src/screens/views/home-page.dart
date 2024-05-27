@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gnosis/src/screens/views/calificacione.dart';
-import 'package:gnosis/src/screens/views/calificaciones-prueba.dart';
+import 'package:gnosis/src/screens/views/calificaciones.dart';
 import 'package:gnosis/src/screens/views/horario.dart';
 import 'package:gnosis/src/screens/views/noticias.dart';
 import 'package:gnosis/src/screens/views/profile.dart';

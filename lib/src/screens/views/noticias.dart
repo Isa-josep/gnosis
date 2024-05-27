@@ -87,8 +87,9 @@ List<NewsItem> newsItems = [
   const NewsItem(
     imageUrl:
         'https://th.bing.com/th/id/R.3726b36db22a8d35f121b91c23528612?rik=%2bhVspPIqHdYlTw&riu=http%3a%2f%2ftecuruapan.edu.mx%2fwp-content%2fuploads%2f2017%2f10%2flogo_simbolo2.png&ehk=VL%2fQ2gfiaKqm5w2PhwQHWE6Cm8cFdZQNejd85gRlzac%3d&risl=&pid=ImgRaw&r=0',
-    title: 'No hay clases',
-    description: 'Alumnos del turno matutino se suspenderan clases',
+    title: 'Vacuna aplicada',
+    description:
+        'Su mascota a recidbido la vacuna contra la rabia el dia 20 de mayo',
   ),
   const NewsItem(
     imageUrl:
@@ -105,23 +106,9 @@ List<NewsItem> newsItems = [
   ),
   const NewsItem(
     imageUrl: 'https://i.ytimg.com/vi/9w4g8BVWR6U/maxresdefault.jpg',
-    title: 'Nuevos maestros',
-    description: 'Se han contratado nuevos maestro para deportivos',
+    title: 'Proxima cita',
+    description: 'Cita reservada para el proximo viernes 22 de octubre',
   ),
 
-  const NewsItem(
-    imageUrl:
-        'https://th.bing.com/th/id/R.3726b36db22a8d35f121b91c23528612?rik=%2bhVspPIqHdYlTw&riu=http%3a%2f%2ftecuruapan.edu.mx%2fwp-content%2fuploads%2f2017%2f10%2flogo_simbolo2.png&ehk=VL%2fQ2gfiaKqm5w2PhwQHWE6Cm8cFdZQNejd85gRlzac%3d&risl=&pid=ImgRaw&r=0',
-    title: 'No hay clases',
-    description: 'Alumnos del turno vespertino se suspenderan clases',
-  ),
-
-  const NewsItem(
-    imageUrl:
-        'https://th.bing.com/th/id/OIP.miuBpzTyZgYsc1vXrIF8xQHaER?rs=1&pid=ImgDetMain',
-    title: 'Un exito de congreso',
-    description:
-        'El evento del pasado sabado 5 de abril a sido de los mas grande en el tecnologico',
-  ),
   // ... más noticias
 ];
